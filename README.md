@@ -14,7 +14,9 @@ valid.
 ## How to use it?
 
 Put `alias_posts.py` in the same directory as your unaliased .md files
-and run it.
+and run it. The script creates an output directory:
+`posts_with_added_alias` containing modified files and leaves the
+original files unmodified.
 
 Posts need to have "Date:" and "Slug:" entries, formatted as below.
 (Not bothered to make this more flexible as it was primarily for my own
@@ -47,4 +49,4 @@ Slug: post-about-something-really-interesting
 `alias_posts.py` makes a new directory containing posts with added
 aliases.
 
-The alias format will then be /YYYY/MM/slug.html (which Blogger uses).
+The alias format will then be `/YYYY/MM/slug.html` (which Blogger uses).
