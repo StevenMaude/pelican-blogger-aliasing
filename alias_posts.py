@@ -34,7 +34,7 @@ def add_alias_to_contents(post_contents):
                                                       "%Y-%m-%d %H:%M")
             string_date = pub_datetime.strftime('/%Y/%m/')
         if item.startswith('Slug:'):
-            slug = item.lstrip('Slug: ').rstrip()
+            slug = item.replace('Slug: ', '').rstrip()
         if item.startswith('Alias:'):
             raise FileHasAliasException
     
